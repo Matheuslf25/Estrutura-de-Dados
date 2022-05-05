@@ -1,3 +1,4 @@
+package Atividade_1;
 public class PontoCartesiano {
     private Ponto pontosA;
     private Ponto pontosB;

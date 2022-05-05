@@ -1,3 +1,4 @@
+package Atividade_1;
 public class Main {
     public static void main(String args[]){
             Ponto ponto1 = new Ponto(10, 10);
