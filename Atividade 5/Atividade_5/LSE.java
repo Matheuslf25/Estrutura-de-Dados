@@ -72,7 +72,7 @@ public class LSE implements iLista {//TAD Lista simplesmente encadeada
         Noh p = inicio;
         while (p!=null){ //busca
             
-            System.out.println("Teste"+p.getInfo());
+            System.out.println("Aluno: "+p.getInfo().toString());
             p = p.getProx();
         }
     }

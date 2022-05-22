@@ -1,4 +1,4 @@
-package Atividade_5;
+package Atividade_6_2;
 public class Aluno {
     private String nome;
     private int idade;
@@ -30,7 +30,6 @@ public class Aluno {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-    
     public String toString(){
         String nome = this.nome;
         return nome;
