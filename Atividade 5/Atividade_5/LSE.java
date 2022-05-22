@@ -16,17 +16,35 @@ public class LSE implements iLista {//TAD Lista simplesmente encadeada
         }
     }
 
-    public void insereFim(Object objeto) { 
+    public boolean estaVazia(){
+        if(tamanho() == 0){
+            return true;
+        }
+        return false;
+    }
+
+    public int tamanho(){
+        Noh p = inicio;
+        int i = 0;
+        while (p!=null){ 
+            p = p.getProx();
+            i++;
+        }
+        return i;
+    }
+
+    public void insereFim(Object objeto) {
         Noh novo = new Noh(objeto);
+        Noh ultimo;
+        ultimo = null;
         if (inicio == null){
             inicio = novo;
         }
         else {
-        Noh ultimo;
             for(Noh i=inicio; i != null; i=i.getProx()){
                 ultimo = i;
-                ultimo.setProx(novo);
             }
+            ultimo.setProx(novo);
         }
     }
 
@@ -54,7 +72,7 @@ public class LSE implements iLista {//TAD Lista simplesmente encadeada
         Noh p = inicio;
         while (p!=null){ //busca
             
-            System.out.println("Teste"+p);
+            System.out.println("Teste"+p.getInfo());
             p = p.getProx();
         }
     }
