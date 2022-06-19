@@ -19,8 +19,8 @@ public class Main {
        long tempoFinalInt = System.currentTimeMillis();
        long tempoRecursão = tempoFinalRec - tempoInicialRec;
        Long tempoIteração = tempoFinalInt - tempoInicialInt;
-       System.out.println("Tempo de Execução Recursivo: "+ tempoRecursão);
-       System.out.println("Tempo de Execução Iterativo: "+ tempoIteração);
+       System.out.printf("Tempo de Execução Recursivo: %.5f ms%n", (tempoRecursão) / 1000d);
+       System.out.printf("Tempo de Execução Iterativo: %.5f ms%n", (tempoIteração) / 1000d);
 
     }
 }
