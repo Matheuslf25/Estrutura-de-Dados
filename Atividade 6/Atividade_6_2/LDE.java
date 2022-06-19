@@ -40,8 +40,6 @@ public class LDE implements iLista {//TAD Lista simplesmente encadeada
         return false;
      }
 
-
-
      public int tamanho() {         
         Noh p = inicio;
         int i = 0;
