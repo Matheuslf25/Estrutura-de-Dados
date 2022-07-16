@@ -1,7 +1,5 @@
 package Atividade_8;
 
-import java.util.Random;
-
 public class Main {
     public static void main(String args[]){
        Vetor numeros = new Vetor();

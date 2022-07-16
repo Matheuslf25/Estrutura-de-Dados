@@ -24,7 +24,7 @@ public class FilaVet implements IFila {
 
     public boolean remove(){
         if (this.isEmpty()){ 
-            System.out.println("Fila estah vazia");
+            System.out.println("Fila esta vazia");
             return false;
         }
             this.inicio = (this.inicio + 1) % this.vetFila.length;
@@ -48,7 +48,7 @@ public class FilaVet implements IFila {
     }
 
     public void print(){
-        for(int i = 0; i <= this.nElemFila; i++){
+        for(int i = 0; i < this.nElemFila; i++){
             System.out.println(this.vetFila[i].getNome());
         }
     }

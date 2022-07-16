@@ -1,7 +1,5 @@
 package Atividade_9;
 
-import javax.print.event.PrintEvent;
-
 public class Vetor {
         public int numeros[] = new int[10000];
         private int totalNum = 0;
