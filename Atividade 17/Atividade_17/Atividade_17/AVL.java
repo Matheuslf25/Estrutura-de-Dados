@@ -139,11 +139,13 @@ class AVL {
 
     public void printTree(NohAB currPtr, String indent, boolean last) {
       if (currPtr != null) {
-        
+        System.out.print(indent);
         if (last) {
-          System.out.print("Direita:");
+          System.out.print("D----");
+          indent += "   ";
         } else {
-          System.out.print("Esquerda:");
+          System.out.print("E----");
+          indent += "|  ";
         }
         System.out.println(currPtr.valor);
         printTree(currPtr.left, indent, false);
